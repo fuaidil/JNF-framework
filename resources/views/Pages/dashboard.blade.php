@@ -1,6 +1,6 @@
 @extends('Pages.master')
 @section('pages', 'Dashboard')
-@section('description', 'Here are all our product with the specified details')
+@section('description', 'Dapatkan pengalaman belanja terbaik anda')
 @section('content')
 
     @if (session('user')->isAdmin)
@@ -98,11 +98,14 @@
         <div class="card-body">
             <div class="row gallery" data-bs-toggle="modal" data-bs-target="#galleryModal">
                 @foreach ($product as $item)
-                    <div class="col-6 col-sm-6 col-lg-3 mt-2 mt-md-0 mb-md-0 mb-2">
-                        <a href="#">
-                            <img class="w-100" src="{{ asset('storage/images/' . $item->pictures) }}"
+                    <div class="col-6 col-sm-6 col-lg-3 mt-2 mt-md-0 mb-md-0 mb-2 h-100">
+                        <a href="">
+                            <img class="w-100" style="height: 200px;" src="{{ asset('storage/images/' . $item->pictures) }}"
                                 data-bs-target="#Gallerycarousel" data-bs-slide-to="{{ $loop->index }}" />
                         </a>
+                        <div class="d-flex justify-content-center">
+                            <span>{{ $item->name }}</span>
+                        </div>
                     </div>
                 @endforeach
             </div>

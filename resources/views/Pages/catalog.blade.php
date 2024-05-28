@@ -1,6 +1,6 @@
 @extends('Pages.master')
 @section('pages', 'Product Catalog')
-@section('description', 'Here are all our product, you can add it to your cart.')
+@section('description', 'Berikut ini merupakan produk-produk kami, anda bisa menambahkannya ke dalam keranjang.')
 @section('content')
 
     <section class="section">
@@ -31,10 +31,16 @@
                     <div class="card">
                         <div class="card-content">
                             <div class="card-body">
-                                <h4 class="card-title">{{ $item->name }}</h4>
-                                <span class="badge bg-light-secondary">{{ $item->category->name }}</span>
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h4 class="card-title">{{ $item->name }}</h4>
+                                    </div>
+                                    <div class="col-3">
+                                        <span class="badge bg-light-secondary">{{ $item->category->name }}</span>
+                                    </div>
+                                </div>
                             </div>
-                            <img class="w-100 img-fluid" src="{{ asset('storage/images/' . $item->pictures) }}"
+                            <img class="w-100 img-fluid" style="height: 200px;" src="{{ asset('storage/images/' . $item->pictures) }}"
                                 alt="Card image cap">
                         </div>
                         <div class="card-footer d-flex justify-content-between">

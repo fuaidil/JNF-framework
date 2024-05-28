@@ -5,12 +5,12 @@
     {{-- <title>@yield('title')</title> --}}
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>bale classy</title>
+    <title>JNF</title>
     <link rel="stylesheet" href="{{ asset('assets/css/main/app.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/extensions/simple-datatables/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/pages/simple-datatables.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/extensions/sweetalert2/sweetalert2.min.css') }}">
-    <link rel="shortcut icon" href="{{ asset('assets/images/logo/logo.png')}}" type="image/png">
+    <link rel="shortcut icon" href="{{ asset('assets/images/logo/logo.png') }}" type="image/png">
 
 
 </head>
@@ -23,7 +23,8 @@
                 <div class="sidebar-header position-relative">
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="logo">
-                            <a href="{{ route('dashboard') }}"><img src="{{ asset('assets/images/logo/text.png')}}" style="height: 6rem;" alt="Logo"srcset="" /></a>
+                            <a href="{{ route('dashboard') }}"><img src="{{ asset('assets/images/logo/text.png') }}"
+                                    style="height: 6rem; width: 235px;" alt="Logo"srcset="" /></a>
                         </div>
                         <div class="d-flex gap-2 align-items-center mt-2">
                             <div class="fs-6">
@@ -51,44 +52,43 @@
                         </li>
 
                         @if (session('user')->isAdmin)
-                          <li class="sidebar-item">
-                              <a href="{{ route('product') }}" class="sidebar-link">
-                                  <i class="bi bi-inboxes-fill"></i>
-                                  <span>Product</span>
-                              </a>
-                          </li>
-                          <li class="sidebar-item">
-                              <a href="{{ route('category') }}" class="sidebar-link">
-                                  <i class="bi bi-stickies-fill"></i>
-                                  <span>Category</span>
-                              </a>
-                          </li>
-                          <li class="sidebar-item">
-                              <a href="{{ route('user') }}" class="sidebar-link">
-                                  <i class="bi bi-people-fill"></i>
-                                  <span>Users</span>
-                              </a>
-                          </li>
-                          <li class="sidebar-item">
-                              <a href="{{ route('sales') }}" class="sidebar-link">
-                                  <i class="bi bi-clipboard-check-fill"></i>
-                                  <span>Sales</span>
-                              </a>
-                          </li>
-
+                            <li class="sidebar-item">
+                                <a href="{{ route('product') }}" class="sidebar-link">
+                                    <i class="bi bi-inboxes-fill"></i>
+                                    <span>Product</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="{{ route('category') }}" class="sidebar-link">
+                                    <i class="bi bi-stickies-fill"></i>
+                                    <span>Category</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="{{ route('user') }}" class="sidebar-link">
+                                    <i class="bi bi-people-fill"></i>
+                                    <span>Users</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="{{ route('sales') }}" class="sidebar-link">
+                                    <i class="bi bi-clipboard-check-fill"></i>
+                                    <span>Sales</span>
+                                </a>
+                            </li>
                         @else
-                          <li class="sidebar-item">
-                              <a href="{{ route('cart') }}" class="sidebar-link">
-                                  <i class="bi bi-basket-fill"></i>
-                                  <span>Cart</span>
-                              </a>
-                          </li>
-                          <li class="sidebar-item">
-                              <a href="{{ route('order') }}" class="sidebar-link">
-                                  <i class="bi bi-clipboard-check-fill"></i>
-                                  <span>Order History</span>
-                              </a>
-                          </li>
+                            <li class="sidebar-item">
+                                <a href="{{ route('cart') }}" class="sidebar-link">
+                                    <i class="bi bi-basket-fill"></i>
+                                    <span>Cart</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="{{ route('order') }}" class="sidebar-link">
+                                    <i class="bi bi-clipboard-check-fill"></i>
+                                    <span>Order History</span>
+                                </a>
+                            </li>
                         @endif
 
                     </ul>
@@ -98,12 +98,14 @@
 
         <div id="main" class="layout-navbar">
 
-            <header class="mb-3">
+            <header>
                 <nav class="navbar navbar-expand navbar-light navbar-top">
                     <div class="container-fluid">
                         <a href="#" class="burger-btn d-block">
                             <i class="bi bi-justify fs-3"></i>
                         </a>
+
+                        {{-- <h4>JNE Apparel</h4> --}}
 
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -166,7 +168,7 @@
                 <div class="page-heading">
                     <div class="page-title">
                         <div class="row">
-                            <div class="col-12 col-md-6 order-md-1 order-last">
+                            <div class="col-12 col-md-6 order-md-1 order-last mb-5">
                                 <h3>@yield('pages')</h3>
                                 <p class="text-subtitle text-muted">@yield('description')</p>
                             </div>
@@ -186,7 +188,7 @@
                             <p>
                                 Made with
                                 <span class="text-danger"><i class="bi bi-heart-fill icon-mid"></i></span>
-                                by <a href="#">JNF</a>
+                                by <a href="">JNF</a>
                             </p>
                         </div>
                     </div>

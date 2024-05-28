@@ -1,6 +1,6 @@
 @extends('Pages.master')
 @section('pages', 'Cart')
-@section('description', 'Here are all your shopping cart')
+@section('description', 'Lihat keranjang belanja anda')
 @section('content')
     <main class="py-3">
         <div class="container">
@@ -21,7 +21,7 @@
                                     @foreach ($cart->cart_item as $cartItem)
                                         <tr>
                                             <td><img src="{{ asset('storage/images/' . $cartItem->product->pictures) }}"
-                                                    alt="" width="100" class="rounded"></td>
+                                                    alt="" width="100" height="100" class="rounded"></td>
                                             <td>{{ $cartItem->product->name }}</td>
                                             <td>{{ $cartItem->quantity }}</td>
                                             <td>

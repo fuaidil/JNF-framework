@@ -1,6 +1,6 @@
 @extends('Pages.master')
 @section('pages', 'Order History')
-@section('description', 'Here are all the list of your order history')
+@section('description', 'Berikut ini daftar pesanan anda')
 @section('content')
     <main class="py-3">
         <div class="container">
