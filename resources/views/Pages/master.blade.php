@@ -180,13 +180,13 @@
                 <footer>
                     <div class="footer clearfix mb-0 text-muted">
                         <div class="float-start">
-                            <p>2023 &copy; apot</p>
+                            <p>2024 &copy; JNF All right reserved</p>
                         </div>
                         <div class="float-end">
                             <p>
-                                Crafted with
+                                Made with
                                 <span class="text-danger"><i class="bi bi-heart-fill icon-mid"></i></span>
-                                by <a href="#">Alya</a>
+                                by <a href="#">JNF</a>
                             </p>
                         </div>
                     </div>
